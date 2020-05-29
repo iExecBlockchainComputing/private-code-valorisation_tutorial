@@ -1,0 +1,64 @@
+{
+  "description": "My iExec ressource description, must be at least 150 chars long in order to pass the validation checks. Describe your application, dataset or workerpool to your users",
+  "license": "MIT",
+  "author": "?",
+  "social": {
+    "website": "?",
+    "github": "?"
+  },
+  "logo": "logo.png",
+  "buyConf": {
+    "params": "",
+    "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+    "trust": "0",
+    "callback": "0x0000000000000000000000000000000000000000"
+  },
+  "app": {
+    "owner": "0x43d5EB45C4c4445893a37B9586c276e15cfc8E86",
+    "name": "Final python launcher app",
+    "type": "DOCKER",
+    "multiaddr": "registry.hub.docker.com/gregoirebailly/fpython-launcher-app:0.0.1",
+    "checksum": "0x533f77b19c280a3628e9a439cb7b46d369115fa0533b6a4f6673f9fee679ec96",
+    "mrenclave": "4b05689fdca3293ceb0315177bff0a3b404b806f66394d5a4a6f2326b685b589|d619238cdf34eee481ba01ee7c9b7fb5|16e7c11e75448e31c94d023e40ece7429fb17481bc62f521c8f70da9c48110a1"
+  },
+  "order": {
+    "apporder": {
+      "app": "0x11e97FA29b9f9d085a8946cc6035f5f87741DC1e",
+      "appprice": "0",
+      "volume": "1000000",
+      "tag": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "datasetrestrict": "0x0000000000000000000000000000000000000000",
+      "workerpoolrestrict": "0x0000000000000000000000000000000000000000",
+      "requesterrestrict": "0x0000000000000000000000000000000000000000"
+    },
+    "datasetorder": {
+      "dataset": "0x21EABfe3AE561E99304FB30A3dA8FE919BC65740",
+      "datasetprice": "20",
+      "volume": "100",
+      "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "apprestrict": "0x11e97FA29b9f9d085a8946cc6035f5f87741DC1e",
+      "workerpoolrestrict": "0x0000000000000000000000000000000000000000",
+      "requesterrestrict": "0x0000000000000000000000000000000000000000"
+    }
+  },
+  "dapps": [
+    {
+      "name": "Recomanded-dapp-for-MyDataset",
+      "addresses": {
+        "42": "0x0000000000000000000000000000000000000000"
+      },
+      "buyConf": {
+        "params": "",
+        "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "trust": "0",
+        "callback": "0x0000000000000000000000000000000000000000"
+      }
+    }
+  ],
+  "dataset": {
+    "owner": "0x43d5EB45C4c4445893a37B9586c276e15cfc8E86",
+    "name": "My private code dataset",
+    "multiaddr": "https://github.com/GregoireBailly/IExec_private-code-tutorial/raw/master/datasets/encrypted/private-code-dataset.zip",
+    "checksum": "0xbb1f516d451a253fd018cf065b16e02793164dd037e41db50d38feaca3293d8a"
+  }
+}
