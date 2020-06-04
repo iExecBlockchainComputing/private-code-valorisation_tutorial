@@ -30,27 +30,43 @@ def bubbleSort(arr, asc):
                     arr[j], arr[j+1] = arr[j+1], arr[j]
 
 def main():
+    print("------------------------")
+    print("STARTING private code execution")
+
     # treat the args
-    # /app/app.py https://inputfile_download_link.com asc/desc 
+    # /app/app.py https://inputfile_download_link.com <asc/desc> 
     args = sys.argv
-    url = 'https://github.com/GregoireBailly/iExecTests/raw/master/data_cp_tuto.csv'
+    url = 'https://github.com/iExecBlockchainComputing/private-code-valorisation_tutorial/raw/master/input_data.csv'
+    'https://github.com/GregoireBailly/iExecTests/raw/master/data_cp_tuto.csv'
+
     if len(args) > 1:
         url = args[1]
+        print(" - Using input file from URL: "+ url)
+    else:
+        print(" - Using default input file from URL: "+ url)
 
     direction_asc = True
     if len(args) > 2 and args[2] == "desc":
         direction_asc = False
+        print(" - Descending sort")
+    else:
+        print(" - Ascending sort")
 
     
     # Download the input file
+    print("DOWNLOADING input file")
     wget.download(url, '/scone/inputs.csv')
     data = read_file("/scone/inputs.csv").split(",")
     
     #work on data
+    print("SORTING")
     sort = [float(i) for i in data]
  
     bubbleSort(sort, direction_asc)
     
     #write result
+    print("WRITING result")
     result = str(sort)
-    write_file("/scone/my-result.txt", result)
+    write_file("/scone/my-result.csv", result)
+
+    print("END of the private code execution")
