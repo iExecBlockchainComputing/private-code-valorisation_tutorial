@@ -1,4 +1,5 @@
-# IExec private code valorisation tutorial / "The Full Power of iExec"
+# IExec private code valorisation tutorial
+## "The Full Power of iExec"
 In this repository, you can find an example of the workspace used to follow the tutorial "The Full Power of iExec" available in the [wiki](https://github.com/iExecBlockchainComputing/private-code-valorisation_tutorial/wiki) section.
 
 The objective is to introduce most of the features available with iExec through a "private code monetization" use case: 
