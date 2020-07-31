@@ -8,47 +8,32 @@
   },
   "logo": "logo.png",
   "buyConf": {
-    "params": "",
+    "params": {
+      "iexec_args": ""
+    },
     "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
     "trust": "0",
     "callback": "0x0000000000000000000000000000000000000000"
   },
   "app": {
     "owner": "0x43d5EB45C4c4445893a37B9586c276e15cfc8E86",
-    "name": "Python launcher app",
+    "name": "python launcher app for private code (v5)",
     "type": "DOCKER",
-    "multiaddr": "registry.hub.docker.com/iexechub/python-launcher-app:0.0.2",
-    "checksum": "0x2fdf159f3b08113fbd199dd66ace13231ee367cda396ae22e64cca460255dc0a",
-    "mrenclave": "068b296c733cb53693c744cd8b43d97b8971fe5339f7bd41a911151885785744|21417210d9722a3e6c7408ad53ca5de2|16e7c11e75448e31c94d023e40ece7429fb17481bc62f521c8f70da9c48110a1"
-  },
-  "order": {
-    "apporder": {
-      "app": "0x74C9e8Fb03F51E669372fff9Efa7Fc0994C8fB6E",
-      "appprice": "0",
-      "volume": "1000000",
-      "tag": "0x0000000000000000000000000000000000000000000000000000000000000001",
-      "datasetrestrict": "0x0000000000000000000000000000000000000000",
-      "workerpoolrestrict": "0x0000000000000000000000000000000000000000",
-      "requesterrestrict": "0x0000000000000000000000000000000000000000"
-    },
-    "datasetorder": {
-      "dataset": "0x60c0B2a82801Ae148ABFC83EbAa3d04a222E3ac4",
-      "datasetprice": "20",
-      "volume": "1000",
-      "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
-      "apprestrict": "0x74C9e8Fb03F51E669372fff9Efa7Fc0994C8fB6E",
-      "workerpoolrestrict": "0x0000000000000000000000000000000000000000",
-      "requesterrestrict": "0x0000000000000000000000000000000000000000"
-    }
+    "multiaddr": "docker.io/iexechub/python-launcher-app:1.0.0",
+    "checksum": "0xb3b8720919fa82342d42554f42a760c3272273f4bb5aa81351cb0c4f359b6f0a",
+    "mrenclave": "41db8dde879003c858cf99779f8d9f73fc4ef2164c3e40be88bb3d3d236f2f1f|dc101fa1c700406514d9f60c652da4fd|2a421b3b7a6f771c3a602f49ce05b6a75793312b8e2c61c673fe7085a16cf138|python -B /app/app.py"
+
   },
   "dapps": [
     {
       "name": "Recomanded-dapp-for-MyDataset",
       "addresses": {
-        "42": "0x0000000000000000000000000000000000000000"
+        "5": "0x0000000000000000000000000000000000000000"
       },
       "buyConf": {
-        "params": "",
+        "params": {
+          "iexec_args": ""
+        },
         "tag": "0x0000000000000000000000000000000000000000000000000000000000000000",
         "trust": "0",
         "callback": "0x0000000000000000000000000000000000000000"
@@ -57,8 +42,8 @@
   ],
   "dataset": {
     "owner": "0x43d5EB45C4c4445893a37B9586c276e15cfc8E86",
-    "name": "My private code dataset",
-    "multiaddr": "https://github.com/iExecBlockchainComputing/private-code-valorisation_tutorial/raw/master/datasets/encrypted/private-code-dataset.zip",
-    "checksum": "0xaf599f25a5d4d0061006c3303016a10728a1e5d040248d016f59d8ca24d7ae78"
+    "name": "private code dataset for private code tutorial (v5)",
+    "multiaddr": "https://github.com/GregoireBailly/iExecTests/raw/master/dataset_privatecodedataset.zip",
+    "checksum": "0xc3351d99b93be090a7b5e80015d76cd827754d5dd430bd2ba18eeef4ac8cce68"
   }
 }
